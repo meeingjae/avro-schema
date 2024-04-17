@@ -1,0 +1,12 @@
+{
+    "namespace": "example.avro",
+    "type": "record",
+    "name": "User",
+    "fields": [
+        {"name":"clientUserId", "type": "string"},
+        {"name":"type", "type": "enum", "symbols": ["COLLECT","CANCEL"]},
+        {"name":"clientTxId", "type": "string"},
+        {"name":"coreTxId", "type": "string"},
+        {"name":"amount", "type": "double"},
+    ]
+}
